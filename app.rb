@@ -1,10 +1,14 @@
 require 'sinatra'
 
 get '/fast' do
-  "Hi"
+  "Hello " * 1024
 end
 
 get '/slow' do
-  sleep 10
+  "Hi"
+end
+
+post "/upload" do
+  p params
   "Hi"
 end
